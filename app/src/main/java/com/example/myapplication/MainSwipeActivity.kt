@@ -3,7 +3,10 @@ package com.example.myapplication
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import kotlinx.android.synthetic.main.activity_main_swipe.*
 import me.relex.circleindicator.CircleIndicator3
+
+
 
 
 
@@ -20,7 +23,7 @@ class MainSwipeActivity : AppCompatActivity() {
         postToList()
 
         view_pager2.adapter = ViewPagerAdapter(titleList,descList,imagesList)
-        view_pager2.orietation = ViewPager2.ORIENTATION_HORIZONTAL
+        view_pager2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
         val indicator = findViewById<CircleIndicator3>(R.id.indicator)
         indicator.setViewPager(view_pager2)

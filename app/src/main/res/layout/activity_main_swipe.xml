@@ -7,19 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".MainSwipeActivity">
 
-    <me.relex.circleindicator.CircleIndicator
+    <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/indicator"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:background="#1E88E5" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:layout_above="@+id/indicator"/>
+        android:layout_height="543dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp" />
 
 
 </RelativeLayout>
